@@ -1,6 +1,6 @@
 if HAVE_DOXYGEN
-all:
+all-local:
         $(DOXYGEN) Doxyfile
-clean:
+clean-local:
         rm -rf doxy
 endif
