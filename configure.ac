@@ -2,7 +2,8 @@
 # Process this file with autoconf to produce a configure script.
 
 AC_PREREQ([2.69])
-AC_INIT([Locke],,,,[http://www.humansoftware.com.br])
+AC_INIT([Locke],[0.1],,,[http://www.humansoftware.com.br])
+AM_INIT_AUTOMAKE([-Wall -Werror foreign])
 AC_CONFIG_SRCDIR([.metadata/.plugins/org.eclipse.cdt.make.core/specs.c])
 AC_CONFIG_HEADERS([config.h])
 
