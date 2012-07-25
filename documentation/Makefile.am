@@ -1,6 +1,6 @@
 if HAVE_DOXYGEN
 all-local:
-        $(DOXYGEN) Doxyfile
+	$(DOXYGEN) Doxyfile
 clean-local:
-        rm -rf doxy
+	rm -rf doxy
 endif
