@@ -41,6 +41,8 @@ AC_CONFIG_FILES([Makefile
 # Only Generate Makefile for Doxygen if the user has it on their system
 AM_CONDITIONAL([HAVE_DOXYGEN],
                [test -n "$DOXYGEN"])
-AM_COND_IF([HAVE_DOXYGEN], [AC_CONFIG_FILES([documentation/Doxyfile])])
+AM_COND_IF([HAVE_DOXYGEN],
+        [AC_CONFIG_FILES([documentation/Doxyfile
+                          documentation/Makefile])])
 
 AC_OUTPUT
