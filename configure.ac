@@ -49,9 +49,12 @@ AC_FUNC_FORK
 AC_CHECK_FUNCS([strcasecmp])
 
 AC_CONFIG_FILES([Makefile
-		 server/Makefile
-		 server/api/Makefile
-		 server/src/Makefile])
+                 server/Makefile
+                 server/api/Makefile
+                 server/src/Makefile
+                 sample_apps/Makefile
+                 sample_apps/demo_http/Makefile
+                 sample_apps/demo_socket/Makefile])
 
 # AC_CONFIG_FILES([Makefile
 #                  sample_apps/Makefile
