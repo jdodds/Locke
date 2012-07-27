@@ -21,7 +21,7 @@ AC_DISABLE_STATIC
 AC_CONFIG_MACRO_DIR([m4])
 LT_INIT
 
-AC_CHECK_PROG([PKGCONFIG],[pkg-config], yes) 
+AC_CHECK_PROG([PKGCONFIG],[pkg-config], yes)
 if test -z "$PKGCONFIG"; then
    AC_MSG_ERROR([pkg-config required])
 fi
@@ -49,8 +49,9 @@ AC_FUNC_FORK
 AC_CHECK_FUNCS([strcasecmp])
 
 AC_CONFIG_FILES([Makefile
-                 server/Makefile
-                 server/api/Makefile])
+		 server/Makefile
+		 server/api/Makefile
+		 server/src/Makefile])
 
 # AC_CONFIG_FILES([Makefile
 #                  sample_apps/Makefile
@@ -59,7 +60,7 @@ AC_CONFIG_FILES([Makefile
 #                  server/Makefile
 #                  server/api/Makefile
 #                  server/src/Makefile])
-# 
+#
 # Only Generate Makefile for Doxygen if the user has it on their system
 # AM_CONDITIONAL([HAVE_DOXYGEN],
 #                [test -n "$DOXYGEN"])
