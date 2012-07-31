@@ -11,6 +11,31 @@ Thumbs.db
 
 # autotools generated files #
 #############################
+aclocal.m4
+ar-lib
+autom4te.cache
+compile
+config.guess
+config.h
+config.h.in
+config.log
+config.status
+config.sub
+configure
+depcomp
+documentation/Doxyfile
+documentation/doxyfile.stamp
+install-sh
+libtool
+ltmain.sh
+m4/*m4
+missing
+.libs
+*la
+*lo
 Makefile.in
 Makefile
 .deps
+server/src/locke
+stamp-h1
+locke*.tar.gz
