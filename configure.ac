@@ -49,26 +49,17 @@ AC_FUNC_FORK
 AC_CHECK_FUNCS([strcasecmp])
 
 AC_CONFIG_FILES([Makefile
-                 server/Makefile
-                 server/api/Makefile
-                 server/src/Makefile
-                 sample_apps/Makefile
-                 sample_apps/demo_http/Makefile
-                 sample_apps/demo_socket/Makefile])
+		 server/Makefile
+		 server/api/Makefile
+		 server/src/Makefile
+		 sample_apps/Makefile
+		 sample_apps/demo_http/Makefile
+		 sample_apps/demo_socket/Makefile])
 
-# AC_CONFIG_FILES([Makefile
-#                  sample_apps/Makefile
-#                  sample_apps/demo_http/Makefile
-#                  sample_apps/demo_socket/Makefile
-#                  server/Makefile
-#                  server/api/Makefile
-#                  server/src/Makefile])
-#
 # Only Generate Makefile for Doxygen if the user has it on their system
-# AM_CONDITIONAL([HAVE_DOXYGEN],
-#                [test -n "$DOXYGEN"])
-# AM_COND_IF([HAVE_DOXYGEN],
-#         [AC_CONFIG_FILES([documentation/Doxyfile
-#                           documentation/Makefile])])
+AM_CONDITIONAL([HAVE_DOXYGEN],
+	       [test -n "$DOXYGEN"])
+AM_COND_IF([HAVE_DOXYGEN],
+	   [AC_CONFIG_FILES([documentation/Doxyfile documentation/Makefile])])
 
 AC_OUTPUT

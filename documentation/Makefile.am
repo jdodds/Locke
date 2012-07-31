@@ -1,6 +1,11 @@
 if HAVE_DOXYGEN
-all-local:
-	$(DOXYGEN) Doxyfile
+doxyfile.stamp:
+	doxygen Doxyfile
+	echo Timestamp > doxyfile.stamp
+
+CLEANFILES = doxyfile.stamp
+
+all-local: doxyfile.stamp
 clean-local:
 	rm -rf doxy
 endif
